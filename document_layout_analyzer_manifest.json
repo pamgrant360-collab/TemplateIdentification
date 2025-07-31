@@ -1,0 +1,32 @@
+{
+    "name": "DocumentLayoutAnalyzer",
+    "description": "Analyzes layout and formatting of uploaded documents against templates.",
+    "endpoint": {
+        "url": "https://yourdomain.com/analyze-document",
+        "method": "POST",
+        "authentication": {
+            "type": "none"
+        }
+    },
+    "inputs": [
+        {
+            "name": "file",
+            "type": "file",
+            "required": true
+        }
+    ],
+    "outputs": [
+        {
+            "name": "matched_template",
+            "type": "string"
+        },
+        {
+            "name": "layout_differences",
+            "type": "list"
+        },
+        {
+            "name": "compliance_issues",
+            "type": "list"
+        }
+    ]
+}
